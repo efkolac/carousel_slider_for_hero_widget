@@ -320,7 +320,7 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                     previousSavedPosition = 0.0;
                   } else {
                     BuildContext storageContext = carouselState!.pageController!.position.context.storageContext;
-                    previousSavedPosition = PageStorage.of(context).readState(context) as double?;
+                    previousSavedPosition = PageStorage.maybeOf(context)?.readState(context) as double?;
                   }
                 }
                 if (previousSavedPosition != null) {
