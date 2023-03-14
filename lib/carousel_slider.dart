@@ -310,7 +310,7 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                   itemOffset = _page - idx;
                 }
               } else {
-                print("corosal git");
+                print("corosal g2121it");
                 BuildContext storageContext;
                 double? previousSavedPosition = 0.0;
                 if (carouselState == null) {
@@ -325,7 +325,7 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                   } else {
                     print("3");
 
-                    BuildContext storageContext = carouselState!.pageController!.position.context.storageContext;
+                    storageContext = carouselState!.pageController!.position.context.storageContext;
                     previousSavedPosition = PageStorage.maybeOf(context)?.readState(context) as double?;
                   }
                 }
