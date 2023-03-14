@@ -2,7 +2,7 @@ library carousel_slider;
 
 import 'dart:async';
 
-import 'package:carousel_slider/carousel_state.dart';
+import 'package:carousel_slider_for_hero_widget/carousel_state.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -312,7 +312,7 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
               } else {
                 print("corosal git");
                 BuildContext storageContext = carouselState!.pageController!.position.context.storageContext;
-                final double? previousSavedPosition = PageStorage.of(storageContext)?.readState(storageContext) as double?;
+                final double? previousSavedPosition = PageStorage.of(storageContext).readState(storageContext) as double?;
                 if (previousSavedPosition != null) {
                   itemOffset = previousSavedPosition - idx.toDouble();
                 } else {

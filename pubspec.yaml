@@ -1,7 +1,5 @@
-name: carousel_slider
+name: carousel_slider_for_hero_widget
 description: A carousel slider widget, support infinite scroll and custom child widget.
-homepage: https://github.com/serenader2014/flutter_carousel_slider
-repository: https://github.com/serenader2014/flutter_carousel_slider
 version: 4.2.1
 
 environment:
