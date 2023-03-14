@@ -324,8 +324,11 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                   }
                 }
                 if (previousSavedPosition != null) {
+                  itemOffset = 0;
                   itemOffset = previousSavedPosition - idx.toDouble();
                 } else {
+                  itemOffset = 0;
+
                   itemOffset = carouselState!.realPage.toDouble() - idx.toDouble();
                 }
               }
