@@ -311,18 +311,18 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                 }
               } else {
                 print("corosal git");
-                // BuildContext storageContext;
-                final double? previousSavedPosition = 0.0;
-                // if (carouselState == null) {
-                //   previousSavedPosition = 0.0;
-                // } else {
-                //   if (carouselState!.pageController == null) {
-                //     previousSavedPosition = 0.0;
-                //   } else {
-                //     BuildContext storageContext = carouselState!.pageController!.position.context.storageContext;
-                //     previousSavedPosition = PageStorage.of(storageContext).readState(storageContext) as double?;
-                //   }
-                // }
+                BuildContext storageContext;
+                double? previousSavedPosition = 0.0;
+                if (carouselState == null) {
+                  previousSavedPosition = 0.0;
+                } else {
+                  if (carouselState!.pageController == null) {
+                    previousSavedPosition = 0.0;
+                  } else {
+                    BuildContext storageContext = carouselState!.pageController!.position.context.storageContext;
+                    previousSavedPosition = PageStorage.of(context).readState(context) as double?;
+                  }
+                }
                 if (previousSavedPosition != null) {
                   itemOffset = 0;
                   itemOffset = previousSavedPosition - idx.toDouble();
