@@ -310,21 +310,14 @@ class CarouselSliderState extends State<CarouselSlider> with TickerProviderState
                   itemOffset = _page - idx;
                 }
               } else {
-                print("corosal g2121it");
                 BuildContext storageContext;
                 double? previousSavedPosition = 0.0;
                 if (carouselState == null) {
-                  print("1");
-
                   previousSavedPosition = 0.0;
                 } else {
                   if (carouselState!.pageController == null) {
-                    print("2");
-
                     previousSavedPosition = 0.0;
                   } else {
-                    print("3");
-
                     storageContext = carouselState!.pageController!.position.context.storageContext;
                     previousSavedPosition = PageStorage.maybeOf(context)?.readState(context) as double?;
                   }
