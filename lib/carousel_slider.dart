@@ -4,7 +4,7 @@ import 'dart:async';
 
 import 'package:carousel_slider_for_hero_widget/carousel_state.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart' hide CarouselController;
+import 'package:flutter/widgets.dart';
 
 import 'carousel_controller.dart';
 import 'carousel_options.dart';
