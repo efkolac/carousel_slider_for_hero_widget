@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart' hide CarouselController;
+import 'package:flutter/widgets.dart';
 
 import 'carousel_options.dart';
 import 'carousel_state.dart';
